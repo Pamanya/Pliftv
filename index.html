@@ -1,130 +1,145 @@
 <!DOCTYPE html>
 <html dir='ltr' lang='en'>
 <head>
-<title>TechyMedies</title>
-<meta charset='UTF-8' />
-<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
-<meta content='IE=edge' http-equiv='X-UA-Compatible' />
-<meta content='max-image-preview:large' name='robots' />
-<link href="https://dl.dropbox.com/s/83ley00l5ongj2v/style.css" rel="stylesheet">
-<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-<link href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' rel='stylesheet' />
-</head>
-<body class='oneGrd MN-2 mobS hdMn bD onIndx onHm' id='mainCont'>
-<script>/*<![CDATA[*/ (localStorage.getItem('mode')) === 'darkmode' ? document.querySelector('#mainCont').classList.add('drK') : document.querySelector('#mainCont').classList.remove('drK') /*]]>*/</script>
-<input class='prfI hidden' id='offPrf' type='checkbox' />
-<input class='navI hidden' id='offNav' type='checkbox' />
-<div class='mainWrp'>
-<div class='no-items section' id='notif-widget'></div>
-<header class='header' id='header'>
-<div class='headCn'>
-<div class='headD headL'>
-<div class='headIc'>
-<label class='tNav tIc bIc' for='offNav'>
-<svg class='line' viewBox='0 0 24 24'><line x1='3' x2='21' y1='12' y2='12'></line><line x1='3' x2='21' y1='5' y2='5'></line><line x1='3' x2='21' y1='19' y2='19'></line></svg>
-</label></div>
-<div class='headN section' id='header-title'><div class='widget Header' data-version='2' id='Header1'>
-<div class='headInnr'>
-<h1 class='headH'>
+<style>
+.divaviso {
+    background-color: #696969;
+    margin-top: 2px;
+    text-align: center;
+    text-color: white;
+    border: 1px;
+    border-color: red;
+    border-radius: 4px;
+}
 
-<div class="poster">
-<a href="go:CINE"><h4 class="alignleft"> Cine</h4><h4 class="alignright">ver más</h4></a></div>
-<div class="scrollmenu">
-<a href="go:HBO"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/space_202207/hbo.jpg" width="100px" height="90px"></div>
-<a href="go:HBO2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/space_202207/hbo2.jpg" width="100px" height="90px"></div>
-<a href="go:SIGNATURE"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/space_202207/hbo_signature.jpg" width="100px" height="90px"></div>
-<a href="go:HBOFAMILY"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/paramount_202207/hbo_family.jpg" width="100px" height="90px"></div>
-<a href="go:HBOPLUS"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/space_202207/hbo%2B.jpg"< width="100px" height="90px"></div>
-<a href="go:SPACE"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/space_202207/space.jpg" width="100px" height="90px"></div>
-<a href="go:GOLDEN"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia902500.us.archive.org/2/items/paramount_202207/golden.jpg" width="100px" height="90px"></div>
-<a href="go:STUNIVE"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia802500.us.archive.org/2/items/paramount_202207/studio_universal.jpg" width="100px" height="90px"></div>
-<a href="go:TNT"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/paramount_202207/tnt.jpg" width="100px" height="90px"></div>
+.boton1 {
+    background-color: #696969; /* Green */
+    border: 1px;
+    margin: 2px;
+    border-radius: 12px;
+    border-color: #fffff;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.ul {
+  list-style: none;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width="100%";
+  padding: 0px 0px 0px 0px;
+  border: 1px solid #03c100;
+  
+  }
+  .li {
+    height: 50px;
+    background: #f5f5f5;
+    border-bottom: #03c100 1px solid;
+    text-align: center;
+    text-padding: 0px 0px 0px 0px;
+    font-size: 18px; 
+    padding: 5px 5px 5px 50px;
+    text-color: black;
+    }
+ a:link{
+   text-decoration:none; 
+   color: black;
+   border-bottom: 0px solid #00c;
+}
 
-</div></div>
-</br>
-<div class="poster">
-<a href="go:DEPORTES"><h4 class="alignleft"> Deportes</h4><h4 class="alignright">ver más</h4></a></div>
-<div class="scrollmenu">
-<a href="go:DIRECTV"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/directv-sports.jpg" width="100px" height="90px"></div>
-<a href="go:espn"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/espn1.jpg" width="100px" height="90px"></div>
-<a href="go:espn2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/espn2.jpg" width="100px" height="90px"></div>
-<a href="go:ESPNPRIME"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia601509.us.archive.org/12/items/picsart-22-10-12-23-23-42-496/Picsart_22-10-12_23-23-42-496.jpg" width="100px" height="90px"></div>
-<a href="go:espn3"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/espn3.jpg" width="100px" height="90px"></div>
-<a href="go:foxsport"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/fox_sports.jpg" width="100px" height="90px"></div>
-<a href="go:foxsport2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/fox_sports2.jpg" width="100px" height="90px"></div>
-<a href="go:foxsport3"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/fox_sports_3.jpg" width="100px" height="90px"></div>
-<a href="go:tntsport"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia601508.us.archive.org/6/items/Tntsport/Picsart_22-10-12_23-12-02-098.jpg" width="100px" height="90px"></div>
-<a href="go:VTVPLUS2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/vtv-plus.jpg" width="100px" height="90px"></div>
-<a href="go:VTV"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/fox_sports/vtv.jpg" width="100px" height="90px"></div>
+a:visited {
+  color: black; 
+  text-decoration:none; 
+}
+
+ a:focus{
+   color: red;
+   border-bottom: 0px dashed #c00;
+   font-style: italic;
+   font-size: 22px;
+}
+ a:hover{
+   color: red;
+   border-bottom: 0px dashed #c00;
+}
+ a:active{
+   color: red;
+   border-bottom: 0px dashed red;
+   }
+   
+   
+}
+ 
+</style>
+<body>
+
+<ul class= "ul">
+
+   <li class="li"><a href="https://nosequewea.tk/fl?get=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9EZXBvclRWSEQvU0FfTGl2ZV9kYXNoX2VuYy9EZXBvclRWSEQubXBk&key=ZGJkNDMwMWFiMGFmMzY4MWJlODljY2RlZTc4ODU5Y2M=&key2=OWUzM2RiMjdlYjNlNWExNWI1YmYzYjhiMzNlMjk3Y2M=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/deportv/deportv.jpg" width="50px" height="20px"></br><strong> DEPORTV</strong></li>
+  
+  <li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly9kdHZvdHQtY2JjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwNjAvbWFuaWZlc3QubXBk&key=ZTliYzZhMWM2NGUwNWMzNWFhNzJlMTJiMTZkMzUyNDc=&key2=MDdjMTczNWFkYWMxNWRlODc3ZGYzZjgxYjRmYzQ3MzE=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/directv-sports.jpg" width="50px" height="20px"></br><strong>Directv Sports</strong></li>
+  
+   <li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEwNjMvREFTSC9tYW5pZmVzdC5tcGQ=&key=YWIwMjBhMTcxMGQ2MzAxNjhkZTIxNjk4Mzc1YTQzOWM=&key2=MjM1ODk4Y2RiMTBiMGNkYmEzNWVhMmNlOTRmYmIxZmI=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia801502.us.archive.org/29/items/directv-sports_202210/directv-sports.jpg" width="50px" height="20px"></br><strong>Directv Sports 2</strong></li>
+
+  
+   <li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwNzEvbWFuaWZlc3QubXBk&key=ZjE5YzNhOGM2MzhkNTJjMmFiNzdiOTU2NmJjYjI5OTY=&key2=ZTRmYWJmMzlkMjNjZDY1NTdmYTcxYjZlNzU0ZWYxZTc=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia801503.us.archive.org/10/items/directv-sports_20221008/directv-sports%2B.png" width="50px" height="20px"></br><strong>Directv Sports +</strong></li>
+
+  
+   <li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExMDQvbWFuaWZlc3QubXBk&key=NjZhNjFjZjIyZTU5NTZjNDliODllY2JjNTYwNDkyNDg=&key2=NTFmYzQ1ZjVhNmYxODRiOTkxNjYzMWFjMzFmOTU2NTM=&lang=1" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/espn1.jpg" width="50px" height="20px"></br><strong>ESPN</strong></li>
+
+  
+ <li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/espn2.jpg" width="50px" height="20px"></br><strong>ESPN 2</strong></li>
+
+  
+  <li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly8xMTAzLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=ZjkxYzQ4NWY2MDViMzM3Y2FiNzVkNDQ2NjA0ZDVkZmM=&key2=OTMzYzAwNjQ5NzAzOWNlOGIzNDVkNTNhMTEzMWQ4YzQ=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/espn3.jpg" width="50px" height="20px"></br><strong>ESPN 3</strong></li>
+
+<li class="li"><a href="https://abedulsfntv.root.sx/noads.html?get=aHR0cHM6Ly9lZGdlLXZvZDAzLWhyLmN2YXR0di5jb20uYXIvbGl2ZS9jN2Vkcy9FU1BONC9TQV9MaXZlX2Rhc2hfZW5jXzJBL0VTUE40Lm1wZA==&key=ZThiOWU3YjhlMThlZjhjMjYwNGMxODUyOTljZjc1NTQ=&key2=N2ViZjk1ODMzMjlhOGRhOWI1MGYwMDYzYTMwYmNhZGQ=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia904706.us.archive.org/22/items/20230102_20230102_1355/ESPN4.jpg" width="50px" height="20px"></br><strong>ESPN 4</strong></li>
+
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly9kdHZvdHQtY2JjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExMDcvbWFuaWZlc3QubXBk&key=NjZkYTMxMDcwZWFjNThmY2FkYjkxMTgwNDkxN2VhMjg=&key2=ODg2ZDYxMmZiMTZhY2ViMTcyZGI2OGZkMzAxNmE3Mzc=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia904709.us.archive.org/2/items/espn-extra_202301/ESPN%20EXTRA.jpg" width="50px" height="20px"></br><strong>ESPN EXTRA</strong>
+</li>
 
 
-</div></div>
-</br>
-<div class="poster">
-<a href="#"><h4 class="alignleft"> Mundo y Cultura</h4><h4 class="alignright">ver más</h4></a></div>
-<div class="scrollmenu">
-<a href="go:HISTORY"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/history.jpg" width="100px" height="90px"></div>
-<a href="go:HISTORY2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia902505.us.archive.org/4/items/h2-_20220724/h2-.jpg" width="100px" height="90px"></div>
-<a href="go:DISCOVERY"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/discovery.jpg" width="100px" height="90px"></div>
-<a href="go:theater"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/discovery_hd_theater.jpg" width="100px" height="90px"></div>
-<a href="go:DISCOVERYT"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/discovery_turbo.jpg" width="100px" height="90px"></div>
-<a href="go:APLANET"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/animalplanet.jpg" width="100px" height="90px"></div>
-<a href="go:NATGEO"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://archive.org/download/h2-_20220724/National-Geographic.jpg" width="100px" height="90px"></div>
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly8xMTI1LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGNiNDlkZjM0MTQyM2NiNTk3YmYzZTc5Yjc4ZjJhNTI=&key2=MTFhZDY5ZDJjODRmNDFkYmI1MjBhYmZlMzhiMTlmZTc=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia601509.us.archive.org/12/items/picsart-22-10-12-23-23-42-496/Picsart_22-10-12_23-23-42-496.jpg" width="50px" height="20px"></br><strong>ESPN PREMIUN</strong></br></li>
 
-</div></div>
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly8xMTE4LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NzZiZTgxMDQxZTcxMzNhMzg0NTdmMDk3ZDJiMDA0MWM=&key2=OGNlZDg0NmM5ZWZmZDU2ZDdlMmE5Mjc2MjI0YmIzYzU=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/fox_sports.jpg" width="50px" height="20px"></br><strong>FOX SPORTS</strong></li>
 
-</br>
-<div class="poster">
-<a href="#"><h4 class="alignleft"> Infantiles</h4><h4 class="alignright">ver más</h4></a></div>
-<div class="scrollmenu">
-<a href="go:"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia804706.us.archive.org/1/items/cartoonito_202210/cartoonito.png" width="100px" height="90px"></div>
-<a href="go:HISTORY2"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia601503.us.archive.org/7/items/tooncast_202210/cartoon-network.png" width="100px" height="90px"></div>
-<a href="go:DISCOVERY"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia801503.us.archive.org/7/items/tooncast_202210/dicovery-kids.png" width="100px" height="90px"></div>
-<a href="go:theater"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia601503.us.archive.org/7/items/tooncast_202210/disney-channel.png" width="100px" height="90px"></div>
-<a href="go:DISCOVERYT"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia601503.us.archive.org/7/items/tooncast_202210/paka-paka.png" width="100px" height="90px"></div>
-<a href="go:APLANET"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia801503.us.archive.org/7/items/tooncast_202210/baby-tv.png" width="100px" height="90px"></div>
-<a href="go:NATGEO"><div class="xplus">
-<img class= width="50px" height="90px" align="center" src="https://ia801503.us.archive.org/7/items/tooncast_202210/nickelodeon.png" width="100px" height="90px"></div>
+<li class="li"><a href="https://nosequewea.tk/fl?get=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9Gb3hTcG9ydHMySEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9Gb3hTcG9ydHMySEQubXBk&key=Yzk4ZGRmZmM0NzBmZTQ0OWFlMWE4ZDY0OTIxMTY5NzY=&key2=NTA4NmQzNzBlODQwMDEwMjMyY2Y0NTMyYjE2ZTE5N2Y=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/fox_sports2.jpg" width="50px" height="20px"></br><strong>FOX SPORTS 2</strong></li>
 
-</div></div>
-</br>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-<script src='https://dl.dropbox.com/s/x2to4fmvv2ftcqn/xscript.js'></script>
+<li class="li"><a href="https://nosequewea.tk/fl?get=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9Gb3hTcG9ydHMzSEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9Gb3hTcG9ydHMzSEQubXBk&key=NTViNDczOTBjZjllNDk5N2RhZTZkYWM4NWUwNTc4NzU=&key2=ZmEzOWU4NTU1NDNjNWQ3MGYzMDYwMGQ1OWU1ZTRjMWI=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/fox_sports_3.jpg" width="50px" height="20px"></br><strong>FOX SPORTS 3</strong></li>
 
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyMzMvbWFuaWZlc3QubXBk&key=YzQ2OTdiZjQ1OGRhNTJmOGI5NmIzNmNjZTc2MWQ1NzE=&key2=YTRkZWU3NzYxNTI3OWM4NThiMTllNWJiNjlhYjY3NTU=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia601508.us.archive.org/6/items/Tntsport/Picsart_22-10-12_23-12-02-098.jpg" width="50px" height="20px"></br><strong>TNT SPORTS</strong></li>
+
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly8xMjQwLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGQ0NWI3OWQ0NDg3MzQzNTg5MDU4YWI0OWRkZjhjZjA=&key2=YWE3Zjk1ZjcxYTNjZmU0MGFhNTk5MDRmOTI4NWFmNzI=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/tyc_sports.jpg" width="50px" height="20px"></br><strong>TyC SPORTS</strong></li>
+
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly8xMjQ1LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MDY5OTczNDA5MjIwMzViZjhiYmRiMDVjY2FkNTlhYWM=&key2=ZTU0OTUxZDlkZjIyYTczYThhYjJkOTUxYzY3Y2EyNjA=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/vtv.jpg" width="50px" height="20px"></br><strong>VTV</strong>
+</li>
+
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly8xMjQ2LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MGIyMzMwMjQzOGZmMzI0ZGFiMmVlYWNhNWVhOWY1NTQ=&key2=Y2Q1OWViNzExYzhhYzRlZTBiZjBjNjZmM2U5NjdhOWM=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://archive.org/download/fox_sports/vtv-plus.jpg" width="50px" height="20px"></br><strong>VTV PLUS</strong></li>
+
+<li class="li"><a href="https://nosequewea.tk/dtvc?get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=" target="YouTube video player">
+<img class= width="50px" height="50px" align="left" src="https://ia804706.us.archive.org/5/items/win_20230102/WIN%2B.jpg" width="50px" height="20px"></br><strong>WIN SPORTS+</strong>
+</li>
+</ul>
 </body>
 </html>
